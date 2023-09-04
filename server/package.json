@@ -1,10 +1,13 @@
 {
+  "homepage": "http://zoofishancode.github.io/ZM-react-store",
   "name": "server",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
